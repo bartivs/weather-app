@@ -14,7 +14,8 @@ export default class Location extends React.Component {
         }
         this.setCurrentPos=this.setCurrentPos.bind(this);
       }
-      mapRef = createRef<Map>()
+      
+
       handleClick = () => {
         const map = this.mapRef.current
         if (map != null) {

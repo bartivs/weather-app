@@ -4,6 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
+    "build": "webpack --mode=development -d inline-source-map && cp src/index.html dist/index.html",
     "watch": "webpack --mode=development --watch -d inline-source-map",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,10 +24,15 @@
     "@babel/preset-react": "^7.14.5",
     "babel-loader": "^8.2.2",
     "css-loader": "^6.2.0",
+    "dotenv": "^10.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-leaflet": "^3.2.1",
     "style-loader": "^3.2.1",
     "webpack": "^5.48.0",
     "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "leaflet": "^1.7.1"
   }
 }
